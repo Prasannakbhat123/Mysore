@@ -1,7 +1,15 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import ScrollingText from './ScrollingText';
 
 const Welcome = () => {
+  const navigate = useNavigate();
+  
+  const handleNavigation = (path) => {
+    navigate(path);
+    window.scrollTo(0, 0);
+  };
+  
   return (
     <section className="py-20 bg-[#FDEBDD] relative overflow-hidden">
       {/* Background Pattern */}
@@ -56,7 +64,10 @@ const Welcome = () => {
               <p className="text-gray-600 mb-6 leading-relaxed flex-grow">
                 Experience a heartfelt service that brings us closer together in faith and community.
               </p>
-              <button className="bg-[#fd8a77] hover:bg-[#fc7961] text-white font-semibold px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg w-full group-hover:shadow-xl mt-auto cursor-pointer">
+              <button
+                className="bg-[#fd8a77] hover:bg-[#fc7961] text-white font-semibold px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg w-full group-hover:shadow-xl mt-auto cursor-pointer"
+                onClick={() => handleNavigation('/worship')}
+              >
                 Join us
               </button>
             </div>
@@ -87,7 +98,10 @@ const Welcome = () => {
               <p className="text-gray-600 mb-6 leading-relaxed flex-grow">
                 Stay updated with our latest gatherings and activities throughout the community.
               </p>
-              <button className="bg-[#fd8a77] hover:bg-[#fc7961] text-white font-semibold px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg w-full group-hover:shadow-xl mt-auto cursor-pointer">
+              <button
+                className="bg-[#fd8a77] hover:bg-[#fc7961] text-white font-semibold px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg w-full group-hover:shadow-xl mt-auto cursor-pointer"
+                onClick={() => handleNavigation('/ministries')}
+              >
                 See more
               </button>
             </div>
@@ -118,7 +132,10 @@ const Welcome = () => {
               <p className="text-gray-600 mb-6 leading-relaxed flex-grow">
                 Be part of a supportive and inclusive community that grows together.
               </p>
-              <button className="bg-[#fd8a77] hover:bg-[#fc7961] text-white font-semibold px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg w-full group-hover:shadow-xl mt-auto cursor-pointer">
+              <button
+                className="bg-[#fd8a77] hover:bg-[#fc7961] text-white font-semibold px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg w-full group-hover:shadow-xl mt-auto cursor-pointer"
+                onClick={() => handleNavigation('/community')}
+              >
                 Get involved
               </button>
             </div>
@@ -149,7 +166,10 @@ const Welcome = () => {
               <p className="text-gray-600 mb-6 leading-relaxed flex-grow">
                 Learn about meaningful ways to contribute and make a lasting difference.
               </p>
-              <button className="bg-[#fd8a77] hover:bg-[#fc7961] text-white font-semibold px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg w-full group-hover:shadow-xl mt-auto cursor-pointer">
+              <button
+                className="bg-[#fd8a77] hover:bg-[#fc7961] text-white font-semibold px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg w-full group-hover:shadow-xl mt-auto cursor-pointer"
+                onClick={() => handleNavigation('/support')}
+              >
                 Contribute
               </button>
             </div>

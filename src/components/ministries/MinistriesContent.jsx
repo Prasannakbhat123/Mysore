@@ -162,8 +162,10 @@ const MinistriesContent = () => {
               Join one of our ministries and become part of a community that's making a difference. Whether you're looking to serve, learn, or grow, there's a place for you here.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="/contact"
+              <button
+                onClick={() => {
+                  window.location.href = '/community#get-in-touch';
+                }}
                 className="bg-[#fd8a77] hover:bg-[#fc7961] text-white font-semibold px-10 py-4 rounded-full text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg inline-flex items-center justify-center group"
               >
                 Contact Us Today
@@ -175,7 +177,7 @@ const MinistriesContent = () => {
                 >
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
-              </a>
+              </button>
               <a
                 href="/worship"
                 className="border-2 border-[#fd8a77] text-[#fd8a77] hover:bg-[#fd8a77] hover:text-white font-semibold px-10 py-4 rounded-full text-lg transition-all duration-300 transform hover:scale-105 inline-flex items-center justify-center"

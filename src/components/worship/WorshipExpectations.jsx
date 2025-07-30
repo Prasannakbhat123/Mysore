@@ -132,8 +132,10 @@ const WorshipExpectations = () => {
             <h4 className="text-2xl font-bold text-black mb-4">Have Questions?</h4>
             <p className="text-gray-700 mb-6">We're here to help make your first visit comfortable and welcoming.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="/contact"
+              <button
+                onClick={() => {
+                  window.location.href = '/community#get-in-touch';
+                }}
                 className="bg-[#fd8a77] hover:bg-[#fc7961] text-white font-semibold px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105 inline-flex items-center justify-center group"
               >
                 Contact Us
@@ -145,7 +147,7 @@ const WorshipExpectations = () => {
                 >
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
-              </a>
+              </button>
               <a
                 href="/community"
                 className="border-2 border-[#fd8a77] text-[#fd8a77] hover:bg-[#fd8a77] hover:text-white font-semibold px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105 inline-flex items-center justify-center"

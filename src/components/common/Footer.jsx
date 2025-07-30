@@ -37,7 +37,7 @@ const Footer = () => {
             <div className="flex space-x-3">
               {/* Instagram */}
               <a 
-                href="#" 
+                href="https://www.youtube.com/@mysorehopecenter-agchurch4399" 
                 className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#fd8a77] transition-all duration-300"
               >
                 <svg className="w-5 h-5 text-[#FFF5E6]" fill="currentColor" viewBox="0 0 24 24">
@@ -47,7 +47,7 @@ const Footer = () => {
               
               {/* YouTube - Replaced Twitter */}
               <a 
-                href="#" 
+                href="https://www.youtube.com/@mysorehopecenter-agchurch4399" 
                 className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#fd8a77] transition-all duration-300"
               >
                 <svg className="w-5 h-5 text-[#FFF5E6]" fill="currentColor" viewBox="0 0 24 24">
